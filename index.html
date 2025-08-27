@@ -1,24 +1,241 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 1: Misión Cero: De Consumidor a Arquitecto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1: Misión Cero: De Consumidor a Arquitecto</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: La Misión de Hoy</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li><strong>Comprender la filosofía de Gnius Club:</strong> Internalizar la transición de ser un consumidor pasivo de tecnología a un arquitecto activo de soluciones.</li>
+                                        <li><strong>Sentirse inspirado:</strong> Conectar con el potencial del diseño 3D, la IA generativa y la fabricación digital para resolver problemas del mundo real.</li>
+                                        <li><strong>Identificar el "Arsenal Tecnológico":</strong> Reconocer las herramientas clave que utilizarán durante el año (Onshape, IA Generativa, Impresión 3D) y entender su propósito.</li>
+                                        <li><strong>Lograr un objetivo práctico:</strong> Crear exitosamente una cuenta de estudiante en Onshape, estableciendo su identidad digital como diseñador.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Misión Cero: El Despegue:</strong> Introducción e Inspiración.</li>
+                                        <li><strong class="tactic-highlight">⚡Briefing de Arsenal:</strong> Presentación del Stack Tecnológico.</li>
+                                        <li><strong class="tactic-highlight">⚡Protocolo de Identidad Digital:</strong> Registro en Onshape.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una cuenta de estudiante en Onshape creada y verificada.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable para todos los estudiantes.</li>
+                                        <li>Presentación de diapositivas de la Sesión 1.</li>
+                                        <li>URL del video de inspiración.</li>
+                                        <li>URL de registro de Onshape para Educación: `onshape.com/education`</li>
+                                        <li>Lista de correos electrónicos de los estudiantes (si es necesario para el registro).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Verificación Técnica:</strong> Asegurarse de que el video de inspiración se reproduce correctamente y de que la página de registro de Onshape está accesible desde la red de la escuela.</li>
+                                        <li><strong>Crear una Cuenta de Muestra:</strong> Realizar el proceso de registro de Onshape como estudiante justo antes de la clase para estar familiarizado con cualquier cambio reciente en la interfaz.</li>
+                                        <li><strong>Tener el Arsenal Visual:</strong> Preparar una diapositiva clara y visualmente atractiva con los logos de Onshape, Midjourney (o similar como representante de IA generativa) y una impresora 3D.</li>
+                                        <li><strong>Revisar Diálogos:</strong> Familiarizarse con el flujo y los diálogos de la sesión para mantener un ritmo dinámico y seguro.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Misión Cero: El Despegue ⏰ 10 minutos</h2>
+                <p>Captar la atención de los estudiantes y establecer el marco mental fundamental del programa: la creación activa sobre el consumo pasivo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Cambio de Paradigma ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva de Bienvenida: "Gnius Club: De Consumidor a Arquitecto")</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Buenas tardes. Bienvenidos. Olviden todo lo que creen saber sobre una clase de tecnología. Esto no es una clase, es un laboratorio de diseño, un estudio de innovación. Y ustedes no están aquí para ser solo estudiantes, están aquí para empezar a entrenar como arquitectos de soluciones.</p>
+                                <p class="dialogue assistant">Piensen en esto: cada día usan tecnología. Usan apps, redes sociales, juegan videojuegos. Son consumidores expertos. Pero, ¿cuántas veces han estado del otro lado? ¿Del lado del que diseña el nivel del juego, no del que solo lo juega? ¿Del lado del que diseña la experiencia de la app, no del que solo la usa? Esa es la diferencia fundamental aquí. Gnius Club es el lugar donde cruzamos esa línea. Aquí, pasamos de ser consumidores a ser creadores. Y hoy es el primer paso de ese viaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Inspiración en Acción ⏰ 4 minutos</h3>
+                            <p>(Proyectar Video. El video debe ser dinámico, de unos 2-3 minutos, mostrando un time-lapse de un diseño en CAD, una IA generando conceptos visuales, y una impresora 3D materializando el objeto. Idealmente, que termine con una aplicación real: una prótesis, un dron, una pieza de arte funcional.)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Palabras son solo eso, palabras. Quiero que vean a qué me refiero. Lo que van a ver no es ciencia ficción. Es lo que está pasando ahora mismo en los estudios de diseño y los laboratorios de ingeniería más avanzados del mundo. Pongan atención a cómo una idea se transforma en algo real.</p>
+                                <p class="dialogue assistant">(Reproducir video)</p>
+                                <p class="dialogue assistant">Ese proceso—de la imaginación, al diseño digital, a un objeto físico que puedes sostener en tu mano—es lo que empezarán a dominar aquí. Esa es la meta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Diálogo Abierto y Reflexión Inicial ⏰ 3 minutos</h3>
+                            <p>Facilitar una breve discusión para captar las primeras impresiones de los estudiantes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Quiero escuchar sus reacciones. No hay respuestas correctas o incorrectas. ¿Qué parte del proceso les llamó más la atención? ¿La parte del diseño en la computadora, la inteligencia artificial creando imágenes, o la impresión 3D? Levanten la mano y compartan.</p>
+                                <p class="dialogue assistant">*(Escuchar 2-3 respuestas, validando cada una de ellas: "Interesante que te fijaras en el diseño paramétrico", "La IA generativa es una herramienta increíble, lo veremos a fondo", "Verlo materializarse es casi mágico, tienes razón".)*</p>
+                                <p class="dialogue assistant">Perfecto. Mantengan esa curiosidad. Ahora vamos a ver exactamente qué herramientas usarán para hacer esto posible.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Briefing de Arsenal ⏰ 10 minutos</h2>
+                <p>Presentar el stack tecnológico del año de forma clara y profesional, explicando el rol de cada herramienta dentro del ecosistema de creación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Arsenal Tecnológico ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva: "Tu Arsenal de Innovación" con los logos de Onshape, IA Generativa (ej. Midjourney) y una Impresora 3D.)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para llevar a cabo estas misiones, necesitarán un arsenal de herramientas profesionales. No vamos a usar software simplificado o de juguete. Van a aprender a usar las herramientas que los ingenieros y diseñadores de compañías como Tesla, SpaceX o Apple usan a diario. Este es su stack tecnológico para este año:</p>
+                                <p class="dialogue assistant"><strong>1. "Primero, Onshape."</strong> (Señalar logo de Onshape). "Este es el núcleo de todo. Es un software de diseño paramétrico 3D completamente profesional que funciona en la nube. Piensen en él como el 'Google Docs' para los ingenieros. Aquí es donde darán vida a sus ideas con precisión milimétrica, donde construirán cada pieza, cada engranaje, cada estructura."</p>
+                                <p class="dialogue assistant"><strong>2. "Segundo, la Inteligencia Artificial Generativa."</strong> (Señalar logo de IA). "Este es su socio creativo. Antes de siquiera abrir Onshape, necesitan inspiración, necesitan conceptos. Herramientas como Midjourney o DALL-E les permitirán traducir una idea abstracta, un 'vibe', en un concepto visual potente. Le dirán 'necesito un diseño de audífonos con estética cyberpunk' y la IA les dará un moodboard para empezar a trabajar."</p>
+                                <p class="dialogue assistant"><strong>3. "Tercero, la Impresión 3D."</strong> (Señalar imagen de impresora 3D). "Este es el puente entre el mundo digital y el mundo físico. De nada sirve un diseño increíble si se queda en la pantalla. La impresora 3D tomará los modelos que creen en Onshape y los convertirá en objetos tangibles que podrán probar, mejorar y, finalmente, usar."</p>
+                                <p class="dialogue assistant"><strong>4. "Y el pegamento que une todo esto es Xolo."</strong> (Puede aparecer un logo sutil de Xolo). "Xolo es su copiloto de IA, su consultor de diseño. Cuando se pregunten '¿cuál es la mejor manera de construir esta pieza en Onshape?', o '¿cómo optimizo este diseño para que sea más resistente?', dialogarán con Xolo. Él no hará el trabajo por ustedes, los guiará para que tomen las mejores decisiones. Lo conocerán a fondo en la siguiente sesión."</p>
+                                <p class="dialogue assistant">Onshape, IA Generativa, Impresión 3D y Xolo. Ese es su arsenal. Ahora, vamos a dar el primer paso para dominarlo: establecer su identidad de diseñador.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Protocolo de Identidad Digital ⏰ 20 minutos</h2>
+                <p>Guiar a todos los estudiantes para que creen exitosamente su cuenta de Onshape, enmarcando el proceso como un paso profesional importante.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Porqué del Registro ⏰ 3 minutos</h3>
+                            <p>Enmarcar la creación de la cuenta como un paso profesional clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">El último paso de hoy es el más práctico, pero es crucial. Vamos a crear sus cuentas profesionales en Onshape. Esto no es como crear una cuenta para un juego. Este perfil será su identidad como diseñadores. Es importante que usen su nombre real y un correo que revisen. Piensen en esto como su primer paso para construir un portafolio profesional.</p>
+                                <p class="dialogue assistant">Usaremos la versión educativa, que es completamente gratuita para estudiantes y tiene toda la potencia de la versión profesional. ¿Listos para crear su estudio de diseño digital?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Creación de Cuentas Guiada ⏰ 12 minutos</h3>
+                            <p>(Proyectar en pantalla la página onshape.com/education. El facilitador guía el proceso paso a paso, haciéndolo él mismo o usando capturas de pantalla.)</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Muy bien, todos abran su navegador y vayan a `onshape.com/education`. Lo haré con ustedes en la pantalla para que nadie se pierda.</p>
+                                 <p class="dialogue assistant">1. "Hagan clic en 'Crear Cuenta' o 'Create Account'."<br>
+                                 2. "Seleccionen 'Estudiante' o 'Student'."<br>
+                                 3. "Ahora, llenen el formulario. Usen su nombre y apellido. En el correo, por favor, usen su correo del colegio."<br>
+                                 4. "En el campo '¿Para qué usarás Onshape?', seleccionen 'Estudiante' y luego 'K-12'."<br>
+                                 5. "Acepten los términos y condiciones y hagan clic en 'Crear Cuenta'."<br>
+                                 6. <strong>"Paso crítico:</strong> Ahora Onshape les enviará un correo de activación. Necesitan abrir su correo y hacer clic en el enlace para activar su cuenta. Esto es muy importante, sin este paso la cuenta no funcionará. Tómense los próximos minutos para hacerlo. Levanten la mano en cuanto su cuenta esté activada."</p>
+                                 <p class="dialogue assistant">(Durante estos 12 minutos, el facilitador circula por la sala, ayudando a los estudiantes que tengan problemas, como no recibir el correo, errores de contraseña, etc. Este tiempo de búfer es esencial.)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Verificación y Cierre ⏰ 5 minutos</h3>
+                            <p>Confirmar la creación exitosa de cuentas y cerrar la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ok, veo que la mayoría ya tiene sus cuentas activadas. ¡Excelente! Acaban de crear su propio estudio de diseño en la nube. Si alguien todavía tiene problemas, que no se preocupe, lo resolveremos al final. El objetivo de hoy era que todos tuvieran su pasaporte de entrada a este mundo, y lo hemos conseguido.</p>
+                                <p class="dialogue assistant">Hoy hemos definido nuestra misión, hemos conocido nuestro arsenal de herramientas y hemos establecido nuestra identidad digital. En la próxima sesión, conocerán a fondo a su copiloto, Xolo, y comenzaremos a entender cómo dialogar con él para transformar nuestras ideas en diseños. Buen trabajo. Misión Cero, completada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
